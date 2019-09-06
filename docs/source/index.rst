@@ -13,6 +13,8 @@ The Flexible Opensource workBench fOr Side-channel analysis FOBOS is an SCA plat
    :maxdepth: 3
 
    license
+   introduction
+   quickstart
    help
 
 

@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quick Start &mdash; FOBOS 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="help.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FOBOS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#software-installation">Software Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-setup">Hardware Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Installation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FOBOS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Quick Start</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quick-start">
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<p>Below, we describe how to setup FOBOS hardware and software and test that everything is working.</p>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Digilent Basys3 board</p></li>
+<li><p>A PC with Linux installed</p></li>
+<li><p>Python2 installed</p></li>
+<li><p>Xilinx Vivado 2017.2</p></li>
+</ol>
+</div>
+<div class="section" id="software-installation">
+<h2>Software Installation<a class="headerlink" href="#software-installation" title="Permalink to this headline">¶</a></h2>
+<p>Note: The following installation procedure is tested on Linux Ubuntu 16.04.</p>
+<ol class="arabic simple">
+<li><p>Download FOBOS from the <a class="reference external" href="https://cryptography.gmu.edu/fobos/getfobos.php">FOBOS home page</a>.</p></li>
+<li><p>Extract the archive into the directory of your choice</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ tar xvfz fobos-v2.0.tgz
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Use the following commands to install the necessary Python packages:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install python-pip
+$ sudo pip install numpy
+$ sudo pip install pyserial
+$ sudo pip install matplotlib
+$ sudo pip install scipy
+$ sudo pip install configparser
+</pre></div>
+</div>
+</div>
+<div class="section" id="hardware-setup">
+<h2>Hardware Setup<a class="headerlink" href="#hardware-setup" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Build the control board Vivado project.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> path-to-fobos/capture/ctrl/basys3ctrl/vivado
+$ make
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Open the project created using Vivado</p></li>
+</ol>
+<div class="figure align-center" id="id1">
+<img alt="_images/open_project.png" src="_images/open_project.png" />
+<p class="caption"><span class="caption-text">Open Vivado project</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>In the Flow Navigator window, click ‘Generate Bitstream’.</p></li>
+<li><p>After bitstream is generated, click File &gt; Export &gt; Export Hardware … make sure to select ‘Include bitstream’.</p></li>
+</ol>
+<div class="figure align-center" id="id2">
+<img alt="_images/export_hardware.png" src="_images/export_hardware.png" />
+<p class="caption"><span class="caption-text">Export Hardware</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Launch the Xilinx SDK (File &gt; Launch SDK).</p></li>
+</ol>
+<div class="figure align-center" id="id3">
+<img alt="_images/launch_sdk.png" src="_images/launch_sdk.png" />
+<p class="caption"><span class="caption-text">Launch SDK</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>In the SDK, create a new empty project(File&gt; New application project). You will need to select the hardware platform.
+SDK will create the BSP project from the hardware platform and create the empty project.</p></li>
+</ol>
+<div class="figure align-center" id="id4">
+<img alt="_images/create_sdk_app.png" src="_images/create_sdk_app.png" />
+<p class="caption"><span class="caption-text">Create Project</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Link all the .c and .h files in the fobos/sources/basys3ctrl/sdk/src to the project
+(right-click on (project/src) -&gt; Import -&gt; General-&gt; file system -&gt; browse to file).
+make sure to check “Advanced-&gt; Create links in the workspace” and “Create virtual folders” .</p></li>
+</ol>
+<div class="figure align-center" id="id5">
+<img alt="_images/import_sdk_src.png" src="_images/import_sdk_src.png" />
+<p class="caption"><span class="caption-text">Launch SDK</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>Right-click on the project you just created and select Build Configurations &gt; Set Active &gt; Release. Then right-click again and select Build Project.</p></li>
+</ol>
+<p>8. Make sure that there are no debug flags. Right-click the release folder under the project and select Properties. In the window that appears
+select C/C++ Build &gt; Settings &gt; Microblaze gcc Compiler &gt; Debugging and set Debug Level to ‘None’.</p>
+<div class="figure align-center" id="id6">
+<img alt="_images/release_settings.png" src="_images/release_settings.png" />
+<p class="caption"><span class="caption-text">Remove Debugging</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="help.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Abubakr Abdulgadir, Jens-Peter Kaps
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

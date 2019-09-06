@@ -1,0 +1,7 @@
+Quick Start
+***********
+Below, we describe how to setup FOBOS hardware and software and test that everything is working.
+
+Requirements
+============
+1- Digilent Basys3 board
