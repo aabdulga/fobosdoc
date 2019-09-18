@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; Flexible Opensource workBench fOr Side-channel analysis (FOBOS) 2.0 documentation</title>
+  <title>T-test Example &mdash; Flexible Opensource workBench fOr Side-channel analysis (FOBOS) 2.0 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Setup" href="setup.html" />
-    <link rel="prev" title="License" href="license.html" /> 
+    <link rel="next" title="Reference" href="reference_doc.html" />
+    <link rel="prev" title="T-test Leakage Assessment" href="t_test.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,10 +82,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#feature-overview">Feature Overview</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tvgen.html">Test Vector Generation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="capture_data.html">Data Acquisition - Processing Data</a></li>
@@ -95,7 +92,7 @@
 <li class="toctree-l1"><a class="reference internal" href="cpa.html">Running Correlation Power Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aes_cpa_example.html">Breaking AES Implementation With CPA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="t_test.html">T-test Leakage Assessment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="t_test_example.html">T-test Example</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">T-test Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reference_doc.html">Reference</a></li>
 </ul>
 
@@ -142,13 +139,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Introduction</li>
+      <li>T-test Example</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/introduction.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/t_test_example.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -161,30 +158,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>The Flexible Opensource workBench fOr Sidechannel analysis (FOBOS) is a platform that
-can be used for side channel analysis.
-You can perform trace collection (Data Acquisition) and attacks (Data Analysis).
-The system is suitable for educational and research purposes.</p>
-<div class="figure align-center" id="id1">
-<img alt="_images/fobos2-block.png" src="_images/fobos2-block.png" />
-<p class="caption"><span class="caption-text">FOBOS Block Diagram</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-<div class="section" id="feature-overview">
-<h2>Feature Overview<a class="headerlink" href="#feature-overview" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Separate control and (Design Under Test) boards allowing addition of new DUTs easily.</p></li>
-<li><p>Uses commercial over-the-shelf boards to when possible to reduce cost.</p></li>
-<li><p>Digilent Basys3 and Nexys A7 control board.</p></li>
-<li><p>DUT support includes Diginelt Nexys3 board (Xilinx Spartan6) and compatible with NewAE CW305
-(Xilinx Artix7 boards).</p></li>
-<li><p>Adjustable DUT clock.</p></li>
-<li><p>Adjustable trigger signal.</p></li>
-<li><p>Scripts to perform Deferential Power Analysis (DPA).</p></li>
-<li><p>Leakage assessment using t-test.</p></li>
-</ul>
-</div>
+  <div class="section" id="t-test-example">
+<h1>T-test Example<a class="headerlink" href="#t-test-example" title="Permalink to this headline">¶</a></h1>
 </div>
 
 
@@ -195,10 +170,10 @@ The system is suitable for educational and research purposes.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="setup.html" class="btn btn-neutral float-right" title="Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="reference_doc.html" class="btn btn-neutral float-right" title="Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="license.html" class="btn btn-neutral float-left" title="License" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="t_test.html" class="btn btn-neutral float-left" title="T-test Leakage Assessment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
